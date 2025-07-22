@@ -69,4 +69,100 @@ h1, h2, h3{
 h4, p, q, small, nav, button, form{
     font-family: 'Montserrat', sans-serif;
 }
+
+/* Navigation and Dropdown Menu */
+header {
+    position: relative;
+}
+
+nav {
+    position: relative;
+}
+
+#menu-toggle {
+    position: relative;
+}
+
+/* Hide the checkbox */
+#toggle {
+    display: none;
+}
+
+/* Style the menu label (hamburger button) */
+#menu-toggle label {
+    display: block;
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#menu-toggle label:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Style the dropdown menu */
+#menu-toggle ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--teal);
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* Hide by default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+/* Show dropdown when checkbox is checked */
+#toggle:checked + label + ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Style dropdown menu items */
+#menu-toggle ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#menu-toggle ul li:last-child {
+    border-bottom: none;
+}
+
+#menu-toggle ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+#menu-toggle ul li a:hover,
+#menu-toggle ul li.active a {
+    background-color: var(--blue);
+}
+
+/* Screen reader only content */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* Body */
