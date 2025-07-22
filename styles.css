@@ -73,14 +73,21 @@ h4, p, q, small, nav, button, form{
 /* Navigation and Dropdown Menu */
 header {
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 #menu-toggle {
     position: relative;
+    margin: 0;
 }
 
 /* Hide the checkbox */
@@ -111,6 +118,7 @@ nav {
     top: 100%;
     left: 0;
     background-color: var(--teal);
+    color: var(--black);
     min-width: 200px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -151,7 +159,7 @@ nav {
     background-color: var(--blue);
 }
 
-/* Screen reader only content */
+/* Screen reader only content hidden in regular view */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -159,6 +167,7 @@ nav {
     padding: 0;
     margin: -1px;
     overflow: hidden;
+    clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
 }
