@@ -61,6 +61,7 @@ table {
     --black: #000000;
 }
 
+/* Header, Nav */
 h1, h2, h3{
     font-family: 'Molle', cursive;
     
@@ -74,8 +75,10 @@ h4, p, q, small, nav, button, form{
 header {
     position: relative;
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: var(--teal);
+
 }
 
 /* Position navigation at the top */
@@ -85,15 +88,23 @@ nav {
     right: 0;
     z-index: 100;
     margin: 0;
+    padding: 10px;
     
 }
 
 /* Push Wunderlust h1 down under Menu Navigation */
 header h1 {
-    margin-top: 60px;
-    text-align: center;
-    text-size: 2.5em;
+    margin-top: 10px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 2.5em;
+}
 
+header p {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.05em;
+}
 
 #logo {
     display: inline-block;
@@ -110,7 +121,7 @@ header h1 {
     margin: 0;
 }
 
-/* Hide the checkbox */
+
 #toggle {
     display: none;
 }
@@ -219,3 +230,10 @@ header h1 {
 }
 
 /* Body */
+
+/* Majorca Section */
+#intro h2{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 20px;
+}
