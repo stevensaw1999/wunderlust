@@ -78,8 +78,8 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: var(--teal);
-    max-width: 100%;
-
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Position navigation at the top */
@@ -90,7 +90,7 @@ nav {
     z-index: 100;
     margin: 0;
     padding: 10px;
-    
+    box-sizing: border-box;
 }
 
 /* Push Wunderlust h1 down under Menu Navigation */
@@ -148,10 +148,11 @@ header p {
 #menu-toggle ul {
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     background-color: var(--teal);
     color: var(--black);
     min-width: 200px;
+    max-width: 90vw;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     /* Hide by default */
@@ -159,6 +160,7 @@ header p {
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
 /* Show dropdown when checkbox is checked */
@@ -263,7 +265,7 @@ header p {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
