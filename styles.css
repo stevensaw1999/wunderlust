@@ -75,14 +75,34 @@ header {
     position: relative;
     margin: 0;
     padding: 0;
+    background-color: var(--teal);
 }
 
+/* Position navigation at the top */
 nav {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
     margin: 0;
-    padding: 0;
+    
+}
+
+/* Push Wunderlust h1 down under Menu Navigation */
+header h1 {
+    margin-top: 60px;
+    text-align: center;
+    text-size: 2.5em;
+
+
+#logo {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#logo img {
+    width: 100px;
+    height: auto;
 }
 
 #menu-toggle {
