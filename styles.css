@@ -252,8 +252,8 @@ header p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 10px;
-    padding: 0;
+    gap: 15px;
+    padding-bottom: 20px;
     box-sizing: border-box;
 }
 
@@ -267,5 +267,5 @@ header p {
 img {
     max-width: 100%;
     height: auto;
-    display: block;
+    display: block; 
 }
