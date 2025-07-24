@@ -270,6 +270,8 @@ img {
     display: block; 
 }
 
+/*Ajudting the width of the images so that it touches the the max size width of the webpage like in the mock */
+
 /* Plan Section */
 #plan{
     display: flex;
@@ -283,7 +285,6 @@ img {
 }
 
 #plan h3 {
-
     padding-left: 20px;
     font-size: 2em;
     margin-bottom: 20px;
@@ -306,7 +307,7 @@ img {
     margin-bottom: 15px;
 }
 
-#plan section img {
+#plan section img { /* Gives the text and image a white border */
     border: 3px solid var(--white);
     border-radius: 15px;
     padding: 10px;
@@ -319,7 +320,7 @@ img {
 
 
 /* Testimonials Section */
-#testimonials {
+#testimonials { /* Center the pictures and text aligning with the rest of the webpage*/
     padding: 20px;
     display: flex;
     flex-direction: column;
