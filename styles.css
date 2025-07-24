@@ -274,5 +274,87 @@ img {
 #plan{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box; 
+    background-color: var(--yellow);
+
+}
+
+#plan h3 {
+
+    padding-left: 20px;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#plan h4 {
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#plan section {
+    background-color: var(--teal);
     width: 100%;
+    height: auto;
+    padding: 20px;
+    border: 3px solid var(--white);
+    border-radius: 10px;
+    box-sizing: border-box; 
+    margin-bottom: 15px;
+}
+
+#plan section img {
+    border: 3px solid var(--white);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: var(--teal);
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Testimonials Section */
+#testimonials {
+    padding: 20px;
+}
+
+#testimonials h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#testimonials section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#testimonials h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+#testimonials p {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+#testimonials q {
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.4;
+    display: block;
+    font-style: italic;
+}
+
+#testimonials img {
+    
 }
