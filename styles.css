@@ -232,6 +232,8 @@ header p {
     z-index: 1000;
 }
 
+/* Not sure how to do the color fade as seen in the mock page? */
+
 /* Body */
 
 /* Majorca Section */
@@ -329,7 +331,6 @@ img {
     background-color: var(--light-gray);
     box-sizing: border-box;
     margin-top: 20px;
-    margin-bottom: 20px;
     
 }
 
@@ -372,3 +373,32 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* About your destination Section */
+#about {
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--blue);
+}
+
+#about h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+    color: var(--black);
+}
+
+#about > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#about section {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
